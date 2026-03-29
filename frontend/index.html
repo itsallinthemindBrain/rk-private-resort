@@ -34,6 +34,20 @@
   </head>
 
   <body>
+    <!-- Facebook SDK for Messenger Chat Plugin -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({ xfbml: true, version: 'v19.0' });
+      };
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <main class="page">
       <article class="card">
         <!-- Hero Section -->
@@ -166,6 +180,15 @@
         </footer>
       </article>
     </main>
+    <!-- Messenger Chat Plugin -->
+    <div class="fb-customerchat"
+      attribution="biz_inbox"
+      page_id="61559916437724"
+      theme_color="#1877F2"
+      logged_in_greeting="Hi! How can we help you with your resort booking?"
+      logged_out_greeting="Hi! How can we help you with your resort booking?">
+    </div>
+
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
