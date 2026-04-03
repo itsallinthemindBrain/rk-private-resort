@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="RK Private Resort and Hotels - A 2-storey boutique family resort with 2 spacious rooms, perfect for family getaways in a serene environment." />
     <meta name="theme-color" content="#fbbf24" />
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="RK Private Resort and Hotels" />
     <meta property="og:description" content="Boutique 2-storey family resort with 2 big rooms offering world-class amenities and unforgettable family experiences." />
     <meta property="og:url" content="https://salmon-grass-0f1311e0f.2.azurestaticapps.net/" />
-    
+
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -22,10 +22,11 @@
       "description": "A 2-storey boutique family resort with 2 spacious rooms, providing exceptional hospitality and family-friendly amenities.",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Purok-1 Gumbauan, Echague Isabela",
         "addressCountry": "PH"
       },
-      "telephone": "+63-XXX-XXXX",
-      "email": "info@rkprivateresort.com"
+      "telephone": "+639539982367",
+      "email": "rollygumpal5@gmail.com"
     }
     </script>
 
@@ -34,6 +35,20 @@
   </head>
 
   <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#">RK's Private Resort</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
+    </nav>
+
     <!-- Facebook SDK for Messenger Chat Plugin -->
     <div id="fb-root"></div>
     <script>
@@ -48,11 +63,12 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+
     <main class="page">
       <article class="card">
         <!-- Hero Section -->
-        <header class="hero">
-          <img src="assets/images/RKLogo.jpg" alt="RK Private Resort and Hotels Logo" class="hero-logo" loading="lazy" />
+        <header class="hero" id="main-content">
+          <img src="assets/images/RKLogo.jpg" alt="RK Private Resort and Hotels Logo" class="hero-logo" loading="eager" />
           <h1 class="hero-name">RK's Private Resort and Hotels</h1>
           <p class="hero-tagline">
             A cozy 2-storey family retreat with 2 spacious rooms designed for unforgettable family moments. Experience comfort, warmth, and hospitality in our intimate resort setting.
@@ -60,7 +76,7 @@
         </header>
 
         <!-- Rooms Section -->
-        <section class="section rooms">
+        <section class="section rooms" id="rooms">
           <h2 class="section-title">Our Rooms</h2>
           <p class="section-subtitle">Two spacious rooms, perfectly designed for family comfort and relaxation.</p>
           <div class="rooms-grid">
@@ -93,18 +109,18 @@
         </section>
 
         <!-- Gallery Section -->
-        <section class="section gallery">
+        <section class="section gallery" id="gallery">
           <h2 class="section-title">Gallery</h2>
           <div class="gallery-grid">
-            <img src="assets/images/Exterior.jpg" alt="Hotel exterior" class="gallery-image" loading="lazy" />     
-            <img src="assets/images/Dinning.jpg" alt="Dining area" class="gallery-image" loading="lazy" />    
-            <img src="assets/images/DeluxeInterior.jpg" alt="Deluxe room interior" class="gallery-image" loading="lazy" />  
+            <img src="assets/images/Exterior.jpg" alt="Hotel exterior" class="gallery-image" loading="lazy" />
+            <img src="assets/images/Dinning.jpg" alt="Dining area" class="gallery-image" loading="lazy" />
+            <img src="assets/images/DeluxeInterior.jpg" alt="Deluxe room interior" class="gallery-image" loading="lazy" />
             <img src="assets/images/FamilyVilla.jpg" alt="Family villa" class="gallery-image" loading="lazy" />
           </div>
         </section>
 
         <!-- Amenities Section -->
-        <section class="section amenities">
+        <section class="section amenities" id="amenities">
           <h2 class="section-title">Amenities</h2>
           <div class="amenities-grid">
             <div class="amenity-item">
@@ -122,7 +138,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section contact">
+        <section class="section contact" id="contact">
           <h2 class="section-title">Contact Us</h2>
           <div class="contact-info">
             <div class="contact-item">
@@ -151,13 +167,15 @@
           </div>
         </section>
 
-        <!-- Contact / CTA Section -->
+        <!-- CTA Section -->
         <section class="section contact-cta">
-          <h2 class="section-title">Experience Luxury in Affordable Price</h2>
+          <h2 class="section-title">Experience Luxury at an Affordable Price</h2>
           <p class="cta-description">
-           We are always looking for ways to provide our guests with an exceptional experience without breaking the bank.
-          </p>  
-
+            We are always looking for ways to provide our guests with an exceptional experience without breaking the bank.
+          </p>
+          <a href="https://m.me/61559916437724" target="_blank" rel="noopener noreferrer" class="cta-btn">
+            Message Us to Book
+          </a>
         </section>
 
         <!-- Footer -->
@@ -165,7 +183,7 @@
           <p>
             <a href="mailto:rollygumpal5@gmail.com">Email</a>
             ·
-            <a href="tel:+631234567890">Phone</a>
+            <a href="tel:+639539982367">Phone</a>
             ·
             <a href="#contact">Location</a>
             ·
@@ -180,6 +198,7 @@
         </footer>
       </article>
     </main>
+
     <!-- Messenger Chat Plugin -->
     <div class="fb-customerchat"
       attribution="biz_inbox"
