@@ -593,13 +593,13 @@ body {
   transform: translateY(-1px);
 }
 
-.fb-link--footer {
+.fb-link-footer {
   font-weight: 500;
   color: #2563eb;
   font-size: 0.85rem;
 }
 
-.fb-link--footer:hover {
+.fb-link-footer:hover {
   color: #3b82f6;
   text-decoration: underline;
 }
