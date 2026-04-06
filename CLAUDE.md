@@ -19,15 +19,18 @@ rk-private-resort/
 │   ├── login.html
 │   ├── css/styles.css
 │   └── assets/
-│       ├── images/    # camelCase filenames, all use loading="lazy"
-│       └── js/scripts.js
+│       ├── images/    # room/gallery/amenity photos; all use loading="lazy"
+│       ├── js/scripts.js
+│       └── profile.jpg
 └── staticwebapp.config.json
 ```
 
 ## What scripts.js Does
-- Scroll-triggered fade-in animations
-- Image hover zoom effects
-- Smooth anchor scrolling
+- `IntersectionObserver` scroll-triggered fade-in (targets `.section` elements)
+- Image hover zoom (`mouseenter` / `mouseleave` on `.gallery-image`, `.room-image`, `.amenity-image`)
+- Smooth anchor scrolling (`a[href^="#"]`)
+- Lazy-load class (`loaded`) applied via `IntersectionObserver` on images
+- Hamburger nav toggle (`initNavToggle`) — toggles `.nav-open`, manages `aria-expanded`; closes on outside click
 
 ## Design Rules
 | Element | Rule |
@@ -62,7 +65,7 @@ npm run lint:js
 - Auth is bypassed when running locally
 
 ## Mobile Layout Rules
-- Mobile-first; minimum viewport 375px
+- Mobile-first; minimum viewport 375px (iPhone SE)
 - Breakpoints: 768px (tablet), 1024px (desktop)
 - Touch targets: at least 44px
 - No horizontal scrolling
