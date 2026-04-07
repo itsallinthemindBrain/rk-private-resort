@@ -1,3 +1,4 @@
+/* global FB */
 window.fbAsyncInit = function () {
   FB.init({ xfbml: true, version: 'v19.0' })
 };

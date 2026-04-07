@@ -1,5 +1,5 @@
-// Google Analytics 4 — replace G-DRBWX751VG with your Measurement ID
+// Google Analytics 4
 window.dataLayer = window.dataLayer || []
-function gtag() { dataLayer.push(arguments) }
-gtag('js', new Date())
-gtag('config', 'G-DRBWX751VG')
+window.gtag = function () { window.dataLayer.push(arguments) }
+window.gtag('js', new Date())
+window.gtag('config', 'G-DRBWX751VG')
