@@ -8,7 +8,7 @@ Business marketing website for RK Private Resort and Hotels. Deployed to Azure S
 |---|---|
 | Frontend | Vanilla HTML5, CSS3, JavaScript |
 | Hosting | Azure Static Web Apps |
-| Auth | GitHub OAuth via `staticwebapp.config.json` |
+| Auth | **None — fully public site** (no login required) |
 | CI/CD | GitHub Actions |
 
 ## Project Structure
@@ -61,8 +61,9 @@ npm run lint:js
 - Lint runs **before** deploy; failure blocks the deploy
 
 ## Auth Behavior
-- GitHub OAuth enforced on all routes except `/login.html` and `/.auth/*`
-- Auth is bypassed when running locally
+- **No authentication required** — the site is fully public
+- Any visitor can access all pages without logging in
+- `login.html` and `/.auth/*` routes exist in `staticwebapp.config.json` but the main route `/*` is open to anonymous users
 
 ## Mobile Layout Rules
 - Mobile-first; minimum viewport 375px (iPhone SE)

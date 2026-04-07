@@ -8,6 +8,10 @@
 **Changed:** Fixed CI lint failure on new JS files
 **Reason:** ESLint `no-undef` errors on `analytics.js` (`dataLayer` global) and `facebook-sdk.js` (`FB` global). Fixed by using `window.gtag`/`window.dataLayer` in analytics.js and adding `/* global FB */` declaration in facebook-sdk.js.
 
+## 2026-04-07 (3)
+**Changed:** Corrected CLAUDE.md — site is fully public, no authentication required
+**Reason:** CLAUDE.md incorrectly stated GitHub OAuth was enforced. Verified via incognito browser test that the site is publicly accessible to all visitors without any login.
+
 ## 2026-04-06
 **Changed:** Cloned and set up on new laptop
 **Reason:** New machine setup; npm dependencies installed.
