@@ -32,6 +32,10 @@
 
     <title>RK Private Resort and Hotels | Luxury Accommodations</title>
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="assets/js/analytics.js"></script>
   </head>
 
   <body>
@@ -51,18 +55,7 @@
 
     <!-- Facebook SDK for Messenger Chat Plugin -->
     <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({ xfbml: true, version: 'v19.0' });
-      };
-      (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <script src="assets/js/facebook-sdk.js"></script>
 
     <main class="page">
       <article class="card">
